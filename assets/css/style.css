@@ -1,0 +1,37 @@
+html, body{ margin: 0; padding: 0; }
+
+/* Desktops and laptops ----------- */
+.content{
+    width: 1200px;
+    margin: 0 auto;
+    background: red;
+}
+
+/* Tablets (landscape) ----------- */
+@media only screen and (max-width : 1224px) {
+
+    .content{ width: 1024px; }
+
+}
+
+/* Tablets (portrait) ----------- */
+@media only screen and (max-width : 1024px) {
+
+    .content{ width: 960px; }
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width : 768px) {
+
+    .content{ width: 95%; margin: 0 2.5%; }
+
+}
+
+/* Smartphones (portrait) */
+@media only screen and (max-width : 321px) {
+
+
+    .content{ width: 100%; margin: 0; }
+
+}
