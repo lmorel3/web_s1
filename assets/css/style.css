@@ -8,9 +8,49 @@ html, body{ margin: 0; padding: 0; }
     background: red;
 }
 
-header{
-    background: blue;
+body{
+	background-image: url("../img/bg.jpg") ;
+	background-attachment: repeat ;
+
 }
+
+.header_bg{
+	width: 100% ;
+	height: 40px ;
+	background: #542307;
+
+}
+
+.logo{
+	width: 100px ;
+	height: 100px  ;
+	display: inline-block ;
+	
+}
+
+.logo img{
+	width: 100% ;
+	height: 100% ;
+}
+
+header .content{
+    margin-top: -30px ;
+}
+
+header nav{
+	background-color: #542307;
+	display: inline-block ;
+	vertical-align: top ;
+}
+
+.jumbotron{
+	width: 67% ;
+	margin : 0 auto;
+	background-image: url("../img/pizza.jpg");
+	border: 4px solid green;
+}
+
+
 
 /* Grid system */
 .onerow {
