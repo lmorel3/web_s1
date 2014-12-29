@@ -51,7 +51,18 @@ header nav{
     background-color: #542307;
     display: inline-block ;
     vertical-align: top ;
+	width: 91.3%;
 }
+
+header li{
+	display : inline;
+	color: #f9d271;
+}
+
+header ul a{
+	color: #f9d271;
+}
+
 
 .jumbotron{
     width: 65% ;
@@ -66,6 +77,32 @@ header nav{
     background-color: #542307;
     padding: 0.1em 2em 2em 2em;
 }
+
+	/* Page liste produits ------*/
+
+#txt1 {
+	margin-left: 25%;
+	color: #b23a18;
+	font-size: 3em;
+}
+	
+.produits{
+	margin-top: 5%;
+	margin-left: 25%;
+	margin-right:25%;
+}
+
+.produits table{
+	width: 90%;
+	height: 500px ;
+}
+
+.produits table td{
+	border: 5px dashed #056839;
+	text-align: center;
+	
+}
+
 
 /* GRID */
 
