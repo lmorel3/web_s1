@@ -2,39 +2,58 @@
 *         COLORS
 *
 *   Green : #056839
-*   Brown : #461b08
-*   Red : #b23a18
+*   Brown : #541307 (old:#461b08)
+*   Red : #C02012 (old:#b23a18)
 *   Orange : #ef6924
-*   Beige : #f9d271
+*   Beige : #E9D2B2
 *   Darkbeige : #c19f4e
 *
 ***************************/
 
 html, body{ margin: 0; padding: 0; }
 
+::selection { background: #C02012; }
+::-moz-selection { background: #C02012; }
+
+::-webkit-input-placeholder{ color: #C02012; font-style: italic;}
+::-moz-placeholder{ color: #C02012; font-style: italic;}
+:-ms-input-placeholder { color: #C02012; font-style: italic;}
+
+strong{
+	color: #C02012;
+}
+
 /* Desktops and laptops ----------- */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700);
+
+
+body{
+    background-image: url("../img/bg.jpg");
+	font-family: 'Open Sans', sans-serif;
+}
+
+h2{
+	color: #C02012;
+	margin-bottom: 0;
+	font-size: 2.5em;
+}
 
 .content{
     width: 1200px;
     margin: 0 auto;
-    border: 3px solid red;
-}
-
-body{
-    background-image: url("../img/bg.jpg") ;
-    background-attachment: repeat ;
 }
 
 .header_bg{
-    width: 100% ;
-    height: 40px ;
+    width: 100%;
+    height: 3.5em;
     background: #542307;
 }
 
 .logo{
     width: 100px ;
     height: 100px  ;
-    display: inline-block ;
+    display: inline-block;
 }
 
 .logo img, .logo a{
@@ -44,33 +63,74 @@ body{
 
 
 header .content{
-    margin-top: -30px ;
+    margin-top: -2.75em;
 }
 
 header nav{
-    background-color: #542307;
-    display: inline-block ;
-    vertical-align: top ;
-	width: 91.3%;
+	background: #C02012;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 10em 0 2em;
+	font-size: 1.2em;
+	margin-top: 1.1em;
+}
+
+header ul{
+	margin: 0.5em;
 }
 
 header li{
 	display : inline;
-	color: #f9d271;
 }
 
-header ul a{
-	color: #f9d271;
+header li:after{
+	display : inline;
+	content: "-";
+	padding-left: 0.8em;
+	padding-right: 0.5em;
+	color: #E9D2B2;
 }
 
+header li:last-child:after{
+	content: "";
+}
+
+header a{
+	color: #E9D2B2;
+	text-decoration: none;
+}
+
+header li.active a{
+	font-weight: 600;
+}
+
+header #phone{
+	position: fixed;
+	right: 1em;
+	background: #C02012;
+	padding: 0.5em 2em 0.5em 1.5em;
+	font-size: 1.2em;
+	top: 1.7em;
+	color: #E9D2B2;
+	font-style: italic;
+}
+
+header #phone img{
+	height: 0.8em;
+	padding-right: 0.6em;
+}
+
+/* PAGE : ACCUEIL */
 
 .jumbotron{
     width: 65% ;
     margin : 0 auto;
     background-image: url("../img/pizza.jpg");
+	background-size: cover;
     border: 4px solid green;
     padding: 2em;
     margin-top: 2em;
+	color: #E9D2B2;
 }
 
 .jumbotron_content{
@@ -78,31 +138,325 @@ header ul a{
     padding: 0.1em 2em 2em 2em;
 }
 
-	/* Page liste produits ------*/
-
-#txt1 {
-	margin-left: 25%;
-	color: #b23a18;
-	font-size: 3em;
+.jumbotron label{
+	font-style: italic;
+	font-size: 1.2em;
+	width: 25%;
+	margin-right: 5%;
 }
-	
+
+.jumbotron input{
+	width: 60%;
+	height: 1.65em;
+	border: none;
+	background: #E9D2B2;
+	padding-left: 5px;
+	color: #C02012;
+}
+
+.jumbotron button{
+	width: 10%;
+	height: 1.827em;
+	border: none;
+	background: #C02012 url(../img/search_icon.png) no-repeat;
+	background-size: contain;
+	transition: background-position-x ease 2s;
+	background-position-x: 50%;
+}
+
+.jumbotron button:hover{
+	cursor: pointer;
+	transition: background-color ease 1s;
+	background-color: #ef6924;
+}
+
+.jumbotron h2{
+	font-size: 2em;
+	margin-bottom: 0.5em;
+	color: #E9D2B2;
+}
+
+/* PAGE : LISTE DES PRODUITS ------*/
+
 .produits{
-	margin-top: 5%;
-	margin-left: 25%;
-	margin-right:25%;
-}
-
-.produits table{
-	width: 90%;
-	height: 500px ;
-}
-
-.produits table td{
-	border: 5px dashed #056839;
+	padding: 0 2em 2em 2em;
 	text-align: center;
-	
 }
 
+.produits p {
+	font-size: 1.2em;
+	margin-top:	0.5em;
+}
+
+.produits ul{
+	margin: 0;
+	padding: 0;
+}
+
+.pizza_list li{
+	display: inline-block;
+	width: 30%;
+	margin: 0.5em;
+	border: 0.2em dashed #056839;
+	text-align: center;
+	padding: 1em 0;
+	color: #C02012;
+	font-size: 1.5em;
+	font-style: italic;
+}
+
+@-webkit-keyframes rotate_pizza {
+	0% { -webkit-transform: rotate(0deg); }
+	50%{ -webkit-transform: rotate(90deg); }
+	100% { -webkit-transform: rotate(0deg); }
+}
+
+@keyframes rotate_pizza {
+	0% { transform: rotate(0deg); }
+	50%{ transform: rotate(90deg); }
+	100% { transform: rotate(0deg); }
+}
+
+@-webkit-keyframes rotate_pizza_inv {
+	0% { -webkit-transform: rotate(0deg); }
+	50%{ -webkit-transform: rotate(-90deg); }
+	100% { -webkit-transform: rotate(0deg); }
+}
+
+@keyframes rotate_pizza_inv {
+	0% { transform: rotate(0deg); }
+	50%{ transform: rotate(-90deg); }
+	100% { transform: rotate(0deg); }
+}
+
+.pizza_list img{
+	width: 50%;
+	padding-top: 1em;
+	padding-bottom: 0.5em;
+	transition: transform ease 2s;
+}
+
+.pizza_list li:nth-child(2n) img{
+	animation: rotate_pizza ease 2s;
+	-webkit-animation: rotate_pizza ease 2s;
+}
+
+.pizza_list li:nth-child(2n+1) img{
+	animation: rotate_pizza_inv ease 2s;
+	-webkit-animation: rotate_pizza_inv ease 2s;
+}
+
+.pizza_list img:hover{
+	transform: rotate(90deg);
+}
+
+.pizza_list button{
+	color: #E9D2B2;
+	background: #541307;
+	border: none;
+	font-size: 0.8em;
+	cursor: pointer;
+	transition: background ease 0.5s;
+}
+
+.pizza_list button:hover{
+	border: none;
+	background: #ef6924;
+}
+
+/* PAGE : RESULTATS RECHERHCE */
+
+.search_results p{
+	font-style: italic;
+}
+
+/* PAGE : PANIER */
+
+.pizza_list .qte, .pizza_list .price{
+	font-size: 0.7em;
+	margin-left: 0.3em;
+}
+
+.pizza_list .qte input{
+	border: 1px solid #C02012;
+	width: 2em;
+	background: none;
+	text-align: center;
+	color: #C02012;
+}
+
+.produits .total{
+	color: #C02012;
+	font-style: normal;
+}
+
+.produits .total span{
+	font-size: 1.3em;
+}
+
+.pizza_list .prod_add, .pizza_list .prod_min, .pizza_list .prod_del{
+	width: auto;
+	padding: 0.2em;
+	margin-left: 0.5em;
+	font-size: 0.7em;
+}
+
+.pizza_list .prod_del{
+	font-size: 0.5em;
+	padding: 0.5em;
+	background: #C02012;
+}
+
+.final_cmd{
+	margin-top: 0;
+	margin-bottom: 2em;
+}
+
+.final_cmd .jumbotron_content{
+	padding-bottom: 5em;
+}
+
+.final_cmd h2{ margin-bottom: 0; }
+.final_cmd p{ margin-top: 0; }
+
+.final_cmd label{
+	width: 40%;
+	display: inline-block;
+	font-size: 1em;
+	margin: 0;
+	margin-right: 5%;
+	font-style: normal; 
+}
+
+.final_cmd input{
+	border: 2px solid #c19f4e;
+	width: 55%;
+	display: inline-block;
+	margin-top: 1em;
+	margin-left: -9px;
+}
+
+.final_cmd form p{
+	text-align: right;
+	margin: 1em 0;
+}
+
+.final_cmd button{
+	float: right;
+	padding: 0.8em 4em 0.8em 0.8em;
+	color: #E9D2B2;
+	font-size: 1.2em;
+	width: auto;
+	height: auto;
+	background-position-x: 95%;
+}
+
+/* PAGE : DESCRIPTION */
+
+.the_pizza{
+	width: 60%;
+	margin: 0 auto;
+}
+
+.the_pizza h2{
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.pizza_img{
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+	font-style: italic;
+}
+
+.pizza_img img{
+	animation: rotate_pizza ease 2s;
+	-webkit-animation: rotate_pizza ease 2s;
+	transition: transform ease 2s;
+	cursor: pointer;
+}
+
+.pizza_img img:hover{
+	transform: rotate(90deg);
+}
+
+.pizza_desc{
+	display: inline-block;
+	vertical-align: top;
+	width: 41%;
+	margin: 0;
+	margin-left: 5%;
+	padding: 0.5em;
+}
+
+.pizza_desc h3{ text-align: center; margin-bottom: 0; }
+
+.pizza_desc li{ list-style-type: circle; }
+
+.pizza_desc button{
+	float: right;
+	padding: 0.8em 4em 0.8em 0.8em;
+	color: #E9D2B2;
+	font-size: 0.8em;
+	width: auto;
+	height: auto;
+	background-position-x: 95%;
+}
+
+.pizza_desc .jumbotron_content{
+	padding: 0.1em 2em 3.75em 2em;
+}
+
+.comment_list{
+
+}
+
+.comment_list h3{
+	color: #C02012;
+}
+
+.a_comment{
+	border-bottom: 0.2em dashed #056839;
+	margin-bottom: 1.5em;
+}
+
+.comment{
+	width: 100%;
+	margin-top: 2em;
+}
+
+/* PAGE : CONTACT */
+
+.informations{
+	width: 65%;
+	padding: 2em;
+	margin: 0 auto;
+	margin-bottom: 2em;
+	text-align: center;
+	font-style: italic;
+	border: 0.2em dashed #056839;
+}
+
+.informations img{ border: 0.2em solid #056839; }
+
+h2.contact_title{
+	text-align: center;
+	margin-bottom: 1em;
+	font-style: normal;
+}
+
+.final_cmd textarea{
+	border: 2px solid #c19f4e;
+	width: 54.6%;
+	display: inline-block;
+	margin-top: 1em;
+	margin-left: -9px;
+	background: #E9D2B2;
+	padding-left: 5px;
+	color: #C02012;
+	margin-left: -9px;
+}
 
 /* GRID */
 
@@ -116,7 +470,7 @@ header ul a{
     display: inline-block;
     background: green;
     padding: 1%;
-    margin-left: -4px; /* Remove @whitespace */
+    margin-left: -5px; /* Remove @whitespace */
 }
 
 .left_50, .right_50{  width: 48%; }
@@ -128,7 +482,7 @@ header ul a{
     background: pink;
     width: 31.3333333%;
     padding: 1%;
-    margin-left: -4px; /* Remove @whitespace */
+    margin-left: -5px; /* Remove @whitespace */
 }
 
 .col_33:first-child{ margin-left: 0; }

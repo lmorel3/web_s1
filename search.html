@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Pizza Drop : livraison de pizzas !</title>
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+    </head>
+
+    <body>
+
+        <header>
+            <div class="header_bg"></div>
+            <div class="content">
+                <div class="logo"><a href="index.html"><img alt="Logo" src="./assets/img/logo.png"></a></div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="listeprod.html"><i>Nos pizzas</i></a></li>
+                        <li><a href="panier.html">Panier (2)</a></li>
+                        <li><a href="contact.html">Qui sommes-nous ?</a></li>
+                    </ul>
+                </nav>
+				<div id="phone"><img src="./assets/img/phone.png">06 58 96 36 21</div>
+            </div>
+        </header>
+		
+		<article>
+					
+			<div class="content">
+			
+                <div class="jumbotron">
+                    <div class="jumbotron_content">
+
+                        <h2>Commande en 2 clics !</h2>
+
+                        <form action="search.html" method="POST">
+                            <label for="search">On te sert quoi ?!</label><input type="text" name="search" id="search" placeholder="ingrédients, pizza, ..." autofocus><button>&nbsp;</button>
+                        </form>
+
+                    </div>
+                </div>
+
+				<div class="search_results produits">
+				
+					<h2>Résultats de la recherche</h2>
+					<p>fromage jambon patates</p>
+				
+					<ul class="pizza_list">
+					
+						<li>La 4 F'<br><img src="./assets/img/pizzas/4fromages.png"><br><button>Ajouter au panier</button></li>
+						<li>Hawaienne<br><img src="./assets/img/pizzas/hawaienne.png"><br><button>Ajouter au panier</button></li>
+						<li>La Savoyarde<br><img src="./assets/img/pizzas/savoyarde.png"><br><button>Ajouter au panier</button></li>
+					
+					</ul>
+					
+				</div>
+			</div>
+			
+		</article>
+		
+    </body>
+
+</html>

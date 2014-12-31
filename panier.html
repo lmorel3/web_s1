@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Pizza Drop : livraison de pizzas !</title>
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+    </head>
+
+    <body>
+
+        <header>
+            <div class="header_bg"></div>
+            <div class="content">
+                <div class="logo"><a href="index.html"><img alt="Logo" src="./assets/img/logo.png"></a></div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="listeprod.html"><i>Nos pizzas</i></a></li>
+                        <li class="active"><a href="panier.html">Panier (2)</a></li>
+                        <li><a href="contact.html">Qui sommes-nous ?</a></li>
+                    </ul>
+                </nav>
+				<div id="phone"><img src="./assets/img/phone.png">06 58 96 36 21</div>
+            </div>
+        </header>
+		
+		<article>
+					
+			<div class="content">
+			
+				<div class="search_results produits">
+				
+					<h2>Mon panier</h2>
+				
+					<ul class="pizza_list">
+					
+						<li>Chickenita<br><img src="./assets/img/pizzas/chickenita.png"><br><button class="prod_min">-</button><span class="qte">Qté. <input name="qte" value="2"></span><button class="prod_add">+</button><button class="prod_del">Suppr.</button><br><span class="price">11€ (x2)</span></li>
+						<li>La Forestière<br><img src="./assets/img/pizzas/forestiere.png"><br><button class="prod_min">-</button><span class="qte">Qté. <input name="qte" value="1"></span><button class="prod_add">+</button><button class="prod_del">Suppr.</button><br><span class="price">9€50</span></li>
+						
+					</ul>
+					
+					<p class="total">Total : <span>31€50</span></p>
+					
+				</div>
+				
+				<div class="jumbotron final_cmd">
+                    <div class="jumbotron_content">
+
+                        <h2>Finaliser la commande</h2>
+						<p>Entrez vos coordonnées de livraison</p>
+
+                        <form action="./fake/bank_redirection.html" method="POST">
+						
+                            <label for="name">Nom <i>*</i></label><input type="text" name="name"><br>
+							<label for="name">Prénom <i>*</i></label><input type="text" name="name"><br>
+							<label for="name">Adresse <i>*</i></label><input type="text" name="name"><br>
+							<label for="name">Complément d'adresse</label><input type="text" name="name"><br>
+							<label for="name">Code Postal <i>*</i></label><input type="number" name="name"><br>
+							<label for="name">Ville <i>*</i></label><input type="text" name="name"><br>
+							<label for="name">Email <i>*</i></label><input type="email" name="name"><br>
+							<label for="name">Tél. <i>*</i></label><input type="tel" name="name"><br>
+							<p>* champs requis</p>
+							
+							<button>Commander</button>
+                        </form>
+
+                    </div>
+                </div>
+				
+			</div>
+			
+		</article>
+		
+    </body>
+
+</html>

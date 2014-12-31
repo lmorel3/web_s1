@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Pizza Drop : livraison de pizzas !</title>
-        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
     </head>
 
@@ -16,12 +16,13 @@
                 <div class="logo"><a href="index.html"><img alt="Logo" src="./assets/img/logo.png"></a></div>
                 <nav>
                     <ul>
-                        <li><a href="">Accueil</a> |</li>
-                        <li><a href="">Accueil</a> |</li>
-                        <li><a href="">Accueil</a> |</li>
-                        <li><a href="">Accueil</a></li>
+                        <li class="active"><a href="index.html">Accueil</a></li>
+                        <li><a href="listeprod.html"><i>Nos pizzas</i></a></li>
+                        <li><a href="panier.html">Panier (2)</a></li>
+                        <li><a href="contact.html">Qui sommes-nous ?</a></li>
                     </ul>
                 </nav>
+				<div id="phone"><img src="./assets/img/phone.png">06 58 96 36 21</div>
             </div>
         </header>
 
@@ -35,7 +36,7 @@
                         <h2>Commande en 2 clics !</h2>
 
                         <form action="search.html" method="POST">
-                            <label for="search">On te sert quoi ?!</label><input type="text" name="search" id="search"><button>&nbsp;</button>
+                            <label for="search">On te sert quoi ?!</label><input type="text" name="search" id="search" placeholder="ingrédients, pizza, ..." autofocus><button>&nbsp;</button>
                         </form>
 
                     </div>
