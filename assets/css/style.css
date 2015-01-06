@@ -160,14 +160,12 @@ header #phone img{
 	border: none;
 	background: #C02012 url(../img/search_icon.png) no-repeat;
 	background-size: contain;
-	transition: background-position-x ease 2s;
-	background-position-x: 50%;
-
+	background-position: 90% 0%;
+	transition: background-position ease 2s, background-color ease 1s;
 }
 
 .jumbotron button:hover{
 	cursor: pointer;
-	transition: background-color ease 1s;
 	background-color: #ef6924;
 }
 
@@ -338,10 +336,9 @@ footer{
 
 .final_cmd input{
 	border: 2px solid #c19f4e;
-	width: 55%;
+	width: 53%;
 	display: inline-block;
 	margin-top: 1em;
-	margin-left: -9px;
 }
 
 .final_cmd form p{
@@ -461,14 +458,16 @@ h2.contact_title{
 
 .final_cmd textarea{
 	border: 2px solid #c19f4e;
-	width: 54.6%;
+	width: 52.6%;
 	display: inline-block;
 	margin-top: 1em;
-	margin-left: -9px;
 	background: #E9D2B2;
 	padding-left: 8px;
 	color: #C02012;
-	margin-left: -9px;
+}
+
+.final_cmd label.msg{
+	vertical-align: top;
 }
 
 /* GRID */
@@ -529,12 +528,18 @@ h3{
 
     .content{ width: 1024px; }
 
+    .final_cmd label { width: 100%; }
+    .final_cmd input { width: 75%; }
+    .final_cmd textarea { width: 75%; }
+
 }
 
 /* Tablets (portrait) ----------- */
 @media only screen and (max-width : 1024px) {
 
     .content{ width: 768px; }
+
+    header nav{ width: 100%; padding: 0; }
 
 }
 
@@ -545,13 +550,32 @@ h3{
 
     .left_50, .right_50, .left_75, .right_75, .right_25, .left_25{ width: 98%; margin:0; }
 
+    header nav{ padding: 0; }
+    header li{ display: block; }
+    header li:after{ content: "";}
+    header #phone{ position: absolute; }
+    .logo{ margin: 0.8em 0 0 1.5em; }
+
+    .jumbotron{ 
+    	width: 88%; 
+    	padding: 0.5em;
+    }
+    
+    .informations{ width: 80%; }
+
+    .produits{ padding: 0; }
+
+    .pizza_list li{ margin: 0.2em; }
+
 }
 
 /* Smartphones (portrait) */
-@media only screen and (max-width : 321px) {
+@media only screen and (max-width : 525px) {
 
-    .content{ width: 100%; margin: 0; }
+	.pizza_list li{ width: 65%; }
 
-    .left_50, .right_50, .left_75, .right_75, .right_25, .left_25{ width: 98%; margin:0; }
+	.jumbotron{ 
+    	width: 90%; 
+    }
 
 }
