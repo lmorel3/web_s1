@@ -120,6 +120,12 @@ header #phone img{
 	padding-right: 0.6em;
 }
 
+
+footer p{ margin: 0; }
+footer .right_50, footer .left_50{ padding: 0; }
+footer .left_50 p{ text-align: left; }
+footer .right_50 p{ text-align: right; }
+
 /* PAGE : ACCUEIL */
 
 .jumbotron{
@@ -176,10 +182,14 @@ header #phone img{
 }
 
 footer{
-	font-style: italic;
-	color: #C02012;
-	text-align: center;
-	font-size: 1em;
+    color: #C02012;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer a{
+    color: #C02012;
+    font-style: italic;
 }
 
 /* PAGE : LISTE DES PRODUITS ------*/
@@ -331,7 +341,7 @@ footer{
 	font-size: 1em;
 	margin: 0;
 	margin-right: 5%;
-	font-style: normal; 
+	font-style: normal;
 }
 
 .final_cmd input{
@@ -359,7 +369,7 @@ footer{
 .jumbotron_content label{
 	padding-top:0.5em;
 }
-	
+
 
 /* PAGE : DESCRIPTION */
 
@@ -531,18 +541,18 @@ h3{
     .final_cmd label { width: 100%; }
     .final_cmd input { width: 75%; }
     .final_cmd textarea { width: 75%; }
-	
+
 }
 
 /* Tablets (portrait) ----------- */
 @media only screen and (max-width : 1024px) {
 
-	header #phone { position: absolute; }
+    header #phone { position: absolute; }
     .content{ width: 768px; }
 
 
     header nav{ width: 100%; padding: 0; }
-	
+
 }
 
 /* Smartphones (landscape) ----------- */
@@ -558,16 +568,19 @@ h3{
     header #phone{ position: absolute; }
     .logo{ margin: 0.8em 0 0 1.5em; }
 
-    .jumbotron{ 
-    	width: 88%; 
+    .jumbotron{
+    	width: 88%;
     	padding: 0.5em;
     }
-    
+
     .informations{ width: 80%; }
 
     .produits{ padding: 0; }
 
     .pizza_list li{ margin: 0.2em; }
+
+    footer .right_50 > p{ text-align: center; }
+    footer .left_50 > p{ text-align: center; }
 
 }
 
@@ -576,8 +589,8 @@ h3{
 
 	.pizza_list li{ width: 65%; }
 
-	.jumbotron{ 
-    	width: 90%; 
+	.jumbotron{
+    	width: 90%;
     }
 
 }
