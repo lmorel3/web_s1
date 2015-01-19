@@ -531,16 +531,18 @@ h3{
     .final_cmd label { width: 100%; }
     .final_cmd input { width: 75%; }
     .final_cmd textarea { width: 75%; }
-
+	
 }
 
 /* Tablets (portrait) ----------- */
 @media only screen and (max-width : 1024px) {
 
+	header #phone { position: absolute; }
     .content{ width: 768px; }
 
-    header nav{ width: 100%; padding: 0; }
 
+    header nav{ width: 100%; padding: 0; }
+	
 }
 
 /* Smartphones (landscape) ----------- */
