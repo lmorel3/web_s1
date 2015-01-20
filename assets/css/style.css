@@ -376,6 +376,7 @@ footer a{
 .the_pizza{
 	width: 60%;
 	margin: 0 auto;
+	text-align: center;
 }
 
 .the_pizza h2{
@@ -408,6 +409,7 @@ footer a{
 	margin: 0;
 	margin-left: 5%;
 	padding: 0.5em;
+	text-align: left;
 }
 
 .pizza_desc h3{ text-align: center; margin-bottom: 0; }
@@ -429,7 +431,7 @@ footer a{
 }
 
 .comment_list{
-
+	text-align: left;
 }
 
 .comment_list h3{
@@ -444,6 +446,7 @@ footer a{
 .comment{
 	width: 100%;
 	margin-top: 2em;
+	text-align: left;
 }
 
 /* PAGE : CONTACT */
@@ -514,7 +517,7 @@ h2.contact_title{
 
 /* Promos */
 .promo{
-    background: red;
+	border: 0.2em dashed #056839;
 	font-style: italic;
 	text-align: center;
 }
@@ -536,6 +539,7 @@ h3{
 /* Tablets (landscape) ----------- */
 @media only screen and (max-width : 1224px) {
 
+	header #phone { position: absolute; }
     .content{ width: 1024px; }
 
     .final_cmd label { width: 100%; }
@@ -547,7 +551,7 @@ h3{
 /* Tablets (portrait) ----------- */
 @media only screen and (max-width : 1024px) {
 
-    header #phone { position: absolute; }
+    
     .content{ width: 768px; }
 
 
