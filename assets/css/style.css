@@ -461,7 +461,11 @@ footer a{
 	border: 0.2em dashed #056839;
 }
 
-.informations img{ border: 0.2em solid #056839; }
+.informations img{
+    border: 0.2em solid #056839;
+    width: 80%;
+    margin: 0 auto;
+}
 
 h2.contact_title{
 	text-align: center;
@@ -522,6 +526,8 @@ h2.contact_title{
 	text-align: center;
 }
 
+.promo > a{ display: block; }
+.promo > a > img{ max-width: 100%; }
 
 /* FONTS */
 h1{
@@ -539,22 +545,24 @@ h3{
 /* Tablets (landscape) ----------- */
 @media only screen and (max-width : 1224px) {
 
-	header #phone { position: absolute; }
+    header #phone { position: absolute; }
     .content{ width: 1024px; }
 
     .final_cmd label { width: 100%; }
     .final_cmd input { width: 75%; }
     .final_cmd textarea { width: 75%; }
 
+    .the_pizza{ width: 100%; }
+    .comment, .pizza_img{ width: 80%; }
+
+    .jumbotron{ width: 80%; margin: 2em auto 0 auto; }
 }
 
 /* Tablets (portrait) ----------- */
 @media only screen and (max-width : 1024px) {
 
-    
+
     .content{ width: 768px; }
-
-
     header nav{ width: 100%; padding: 0; }
 
 }
@@ -578,6 +586,9 @@ h3{
     }
 
     .informations{ width: 80%; }
+
+    .comment_list{ padding: 0 1em; }
+    .comment, .pizza_img{ width: 100%; }
 
     .produits{ padding: 0; }
 
