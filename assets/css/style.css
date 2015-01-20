@@ -1,15 +1,3 @@
-/**************************
-*         COLORS
-*
-*   Green : #056839
-*   Brown : #541307 (old:#461b08)
-*   Red : #C02012 (old:#b23a18)
-*   Orange : #ef6924
-*   Beige : #E9D2B2
-*   Darkbeige : #c19f4e
-*
-***************************/
-
 html, body{ margin: 0; padding: 0; }
 
 ::selection { background: #C02012; }
