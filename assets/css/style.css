@@ -563,7 +563,7 @@ h3{
     .content{ width: 768px; }
     header nav{ width: 100%; padding: 0; }
 
-    .jumbotron input { width: 50%; }
+    .home_top.jumbotron input { width: 50%; }
 
 }
 
