@@ -1,8 +1,5 @@
 html, body{ margin: 0; padding: 0; }
 
-::selection { background: #C02012; }
-::-moz-selection { background: #C02012; }
-
 ::-webkit-input-placeholder{ color: #C02012; font-style: italic;}
 ::-moz-placeholder{ color: #C02012; font-style: italic;}
 :-ms-input-placeholder { color: #C02012; font-style: italic;}
